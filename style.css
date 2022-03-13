@@ -4,29 +4,28 @@ body {
   flex-direction: column;
   line-height: 1.5;
   font-size: 16px;
+  background-color: blue;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
-  background-color: #13293d;
-  color: #fff;
+  background-color: #9e9e9e;
+  color: rgb(0, 0, 0);
 }
 
-/* Change the heading size to 200%, give it a margin all around, and assign font family to serif */
+/* Change the heading size to 200%, give it a margin all around, and assign font family to different font style */
 h1 {
-  margin: 2%;
+  margin: 5%;
   font-size: 200%;
-  font-family: serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Change header size to 180%, give it a 3% margin on top and bottom, and assign font family to serif */
 h2 {
-  margin: 3% 0;
   font-size: 180%;
-  font-family: serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Change header size to 150% and assign font family to serif */
@@ -42,7 +41,7 @@ nav ul {
 }
 
 nav a {
-  color: #b9C6ae;
+  color: #111111;
   font-weight: bold;
   text-decoration: none;
 }
@@ -71,7 +70,7 @@ article p {
 /* Add a margin to indent the list, give it square bullet points, and assign font family to monospace */
 article ul {
   margin-left: 5%;
-  list-style: square;
+  list-style: none;
   font-family: monospace;
 }
 
@@ -107,4 +106,13 @@ footer {
     width: 100%;
     text-align: center;
   }
+}
+.anime {
+  max-width: 200px;
+  align-items: center;
+}
+a:hover {
+  background-color: rgb(209, 19, 19);
+  padding: 10%;
+  
 }
