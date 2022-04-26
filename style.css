@@ -1,73 +1,41 @@
-/* Set the font size and line height */
 body {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
   font-size: 16px;
-  background-color: blue;
+  background-color: black font-family: 'Indie Flower', cursive;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #9e9e9e;
+  background-color: black;
   color: rgb(0, 0, 0);
+  height: 100px;
 }
 
-/* Change the heading size to 200%, give it a margin all around, and assign font family to different font style */
 h1 {
-  margin: 5%;
-  font-size: 200%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Change header size to 180%, give it a 3% margin on top and bottom, and assign font family to serif */
-h2 {
-  font-size: 180%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Change header size to 150% and assign font family to serif */
-h3 {
-  font-size: 150%;
-  font-family: serif;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 300px;
-}
-
-nav a {
-  color: #111111;
-  font-weight: bold;
-  text-decoration: none;
+  font-size: 300%;
+  text-align: center;
 }
 
 main {
   display: flex;
   flex: 1 1 0;
-  max-width: 1200px;
-  margin: 2% auto;
+  max-width: 100%;
 }
 
 section {
   flex: 1 1 0;
   padding-right: 5%;
+  background-color: moccasin;
 }
 
 article {
   border-bottom: 1px solid #d8a47f;
 }
 
-/* Add a margin to the top and bottom of the paragraphs */
-article p {
-  margin: 2% 0;
-}
-
-/* Add a margin to indent the list, give it square bullet points, and assign font family to monospace */
 article ul {
   margin-left: 5%;
   list-style: none;
@@ -78,8 +46,7 @@ aside {
   width: 25%;
 }
 
-input,
-button {
+input {
   width: 100%;
   margin: 2% 0;
   padding: 1%;
@@ -89,30 +56,32 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2%;
-  background-color: #13293d;
+  background-color: #0f0f0f;
   color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-  header, main {
+
+  header,
+  main {
     flex-direction: column;
   }
-
-  section {
-    padding-right: 0;
-  }
-
-  aside {
-    width: 100%;
-    text-align: center;
-  }
 }
+
 .anime {
-  max-width: 200px;
+  max-width: 50%;
   align-items: center;
+  height: 25rem;
+  padding-left: 25%;
+
 }
-a:hover {
-  background-color: rgb(209, 19, 19);
-  padding: 10%;
-  
+
+a {
+  font-size: 25px;
+  color: rgb(15, 12, 209);
+}
+
+p,
+span {
+  font-size: 30px;
 }
